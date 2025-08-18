@@ -30,55 +30,15 @@ export function Projects() {
 
   const projects = [
     {
-      title: "Ghar Ka Khana",
-      description:
-        "A full-stack food delivery platform built with MERN stack featuring user authentication, order management, and real-time updates.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Durgeshkr01",
-      featured: true,
-      gradient: "from-orange-500 to-red-500",
-    },
-    {
-      title: "Typing Speed Tester",
-      description:
-        "A level-based typing test application with PWA integration, featuring different difficulty levels and performance tracking.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["JavaScript", "HTML5", "CSS3", "PWA", "Local Storage"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Durgeshkr01",
-      gradient: "from-blue-500 to-purple-500",
-    },
-    {
-      title: "Weather App Interface",
-      description:
-        "A responsive React application that displays live weather information using external weather APIs with a clean, modern interface.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["React.js", "Weather API", "CSS3", "Responsive Design"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Durgeshkr01",
-      gradient: "from-cyan-500 to-blue-500",
-    },
-    {
       title: "Portfolio Website",
       description:
         "A personal portfolio website showcasing projects, skills, and contact information with modern design and smooth animations.",
       image: "/placeholder.svg?height=200&width=400",
       technologies: ["Next.js", "Tailwind CSS", "React.js", "Responsive UI"],
       liveUrl: "#",
-      githubUrl: "https://github.com/Durgeshkr01",
-      gradient: "from-green-500 to-emerald-500",
-    },
-    {
-      title: "Media Integration Page",
-      description:
-        "An interactive media-rich web page designed for demos, featuring multimedia content integration and responsive design.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Media APIs"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Durgeshkr01",
-      gradient: "from-purple-500 to-pink-500",
+      githubUrl: "https://github.com/KhushiSingh001",
+      featured: true,
+      gradient: "from-pink-500 to-purple-500",
     },
   ]
 
@@ -86,22 +46,22 @@ export function Projects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="py-20 bg-gradient-to-br from-white via-blue-50/50 to-indigo-50/50 relative overflow-hidden"
+      className="py-20 bg-gradient-to-br from-white via-pink-50/50 to-purple-50/50 relative overflow-hidden"
     >
       {/* Background Decorations */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-purple-600/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-pink-400/10 to-purple-600/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-indigo-400/10 to-pink-600/10 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-in slide-in-from-top-8" : "opacity-0"}`}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Here are some of my recent projects that showcase my skills and{" "}
-            <span className="text-blue-600 font-semibold">learning journey</span> in full-stack development.
+            <span className="text-pink-600 font-semibold">learning journey</span> in full-stack development.
           </p>
         </div>
 
@@ -133,7 +93,7 @@ export function Projects() {
                 ></div>
               </div>
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-slate-800 group-hover:text-blue-600 transition-colors duration-300">
+                <CardTitle className="text-xl text-slate-800 group-hover:text-pink-600 transition-colors duration-300">
                   {project.title}
                 </CardTitle>
                 <CardDescription className="text-slate-600 leading-relaxed">{project.description}</CardDescription>
@@ -144,7 +104,7 @@ export function Projects() {
                     <Badge
                       key={techIndex}
                       variant="outline"
-                      className="bg-slate-50 text-slate-700 border-slate-200 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition-all duration-300 font-medium"
+                      className="bg-slate-50 text-slate-700 border-slate-200 hover:bg-pink-50 hover:text-pink-700 hover:border-pink-200 transition-all duration-300 font-medium"
                     >
                       {tech}
                     </Badge>

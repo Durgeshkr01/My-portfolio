@@ -34,9 +34,9 @@ export function Skills() {
     },
     {
       title: "Frontend Development",
-      skills: ["HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "React.js", "Next.js"],
-      color: "from-blue-500 to-cyan-500",
-      bgColor: "bg-blue-50",
+      skills: ["HTML", "CSS", "Tailwind CSS", "Bootstrap", "React.js", "Next.js"],
+      color: "from-pink-500 to-purple-500",
+      bgColor: "bg-pink-50",
     },
     {
       title: "Backend Development",
@@ -62,22 +62,22 @@ export function Skills() {
     <section
       ref={sectionRef}
       id="skills"
-      className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden"
+      className="py-20 bg-gradient-to-br from-slate-50 via-pink-50 to-purple-50 relative overflow-hidden"
     >
       {/* Background Decorations */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-gradient-to-bl from-blue-400/10 to-purple-600/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 right-0 w-96 h-96 bg-gradient-to-bl from-pink-400/10 to-purple-600/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-0 w-96 h-96 bg-gradient-to-tr from-indigo-400/10 to-pink-600/10 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-in slide-in-from-top-8" : "opacity-0"}`}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Here are the technologies and tools I work with to bring{" "}
-            <span className="text-blue-600 font-semibold">ideas to life</span>.
+            <span className="text-pink-600 font-semibold">ideas to life</span>.
           </p>
         </div>
 

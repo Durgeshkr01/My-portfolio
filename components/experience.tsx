@@ -31,24 +31,24 @@ export function Experience() {
       title: "Full Stack Development Projects",
       company: "Personal Projects & Learning",
       location: "India",
-      period: "2023 - Present",
+      period: "2024 - Present",
       icon: Briefcase,
       description: [
-        "Built multiple full-stack applications using MERN stack",
-        "Developed responsive web applications with modern UI/UX principles",
-        "Implemented RESTful APIs and database integration",
-        "Created Progressive Web Applications (PWA) with offline capabilities",
-        "Collaborated on open-source projects and contributed to GitHub repositories",
+        "Building real-world projects and exploring full-stack development",
+        "Developing end-to-end applications using the MERN stack",
+        "Learning modern web development practices and responsive design",
+        "Exploring Progressive Web Applications (PWA) development",
+        "Contributing to open-source projects and building GitHub portfolio",
       ],
       technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "JavaScript", "Tailwind CSS"],
-      gradient: "from-blue-500 to-purple-500",
-      bgColor: "bg-blue-50",
+      gradient: "from-pink-500 to-purple-500",
+      bgColor: "bg-pink-50",
     },
     {
       title: "Computer Science Engineering Student",
       company: "Centurion University of Technology and Management",
       location: "India",
-      period: "2023 - 2027 (Expected)",
+      period: "2024 - 2028 (Expected)",
       icon: GraduationCap,
       description: [
         "Pursuing B.Tech in Computer Science and Engineering",
@@ -67,22 +67,22 @@ export function Experience() {
     <section
       ref={sectionRef}
       id="experience"
-      className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden"
+      className="py-20 bg-gradient-to-br from-slate-50 via-pink-50 to-purple-50 relative overflow-hidden"
     >
       {/* Background Decorations */}
-      <div className="absolute top-20 left-0 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-purple-600/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 left-0 w-96 h-96 bg-gradient-to-br from-pink-400/10 to-purple-600/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-0 w-96 h-96 bg-gradient-to-tl from-indigo-400/10 to-pink-600/10 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-in slide-in-from-top-8" : "opacity-0"}`}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
             Experience & Learning Journey
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             My journey in computer science and software development, including{" "}
-            <span className="text-blue-600 font-semibold">academic pursuits</span> and{" "}
+            <span className="text-pink-600 font-semibold">academic pursuits</span> and{" "}
             <span className="text-purple-600 font-semibold">personal projects</span>.
           </p>
         </div>
@@ -106,7 +106,7 @@ export function Experience() {
                     </div>
                     <div>
                       <CardTitle className="text-2xl text-slate-800 mb-2">{exp.title}</CardTitle>
-                      <CardDescription className="text-lg font-semibold text-blue-600 mb-2">
+                      <CardDescription className="text-lg font-semibold text-pink-600 mb-2">
                         {exp.company}
                       </CardDescription>
                     </div>
@@ -127,7 +127,7 @@ export function Experience() {
                 <ul className="space-y-3 mb-6">
                   {exp.description.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-slate-700 leading-relaxed">{item}</span>
                     </li>
                   ))}

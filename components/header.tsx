@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
@@ -31,17 +32,25 @@ export function Header() {
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-xl border-b border-blue-100 shadow-lg shadow-blue-500/10"
+          ? "bg-white/90 backdrop-blur-xl border-b border-pink-100 shadow-lg shadow-pink-500/10"
           : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link
-            href="#home"
-            className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
-          >
-            Durgesh Kumar
+          <Link href="#home" className="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+            <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-pink-500 shadow-lg">
+              <Image
+                src="/images/khushi-profile.jpg"
+                alt="Khushi Singh"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
+            <span className="text-xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+              Khushi Singh
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,10 +59,10 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-slate-600 hover:text-blue-600 transition-all duration-300 relative group font-medium"
+                className="text-slate-600 hover:text-pink-600 transition-all duration-300 relative group font-medium"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
           </nav>
@@ -62,7 +71,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300"
+            className="md:hidden hover:bg-pink-50 hover:text-pink-600 transition-colors duration-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -71,12 +80,12 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-blue-100 bg-white/95 backdrop-blur-xl rounded-b-2xl shadow-xl animate-in slide-in-from-top-2 duration-300">
+          <nav className="md:hidden py-4 border-t border-pink-100 bg-white/95 backdrop-blur-xl rounded-b-2xl shadow-xl animate-in slide-in-from-top-2 duration-300">
             {navItems.map((item, index) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block py-3 px-4 text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 rounded-lg mx-2"
+                className="block py-3 px-4 text-slate-600 hover:text-pink-600 hover:bg-pink-50 transition-all duration-300 rounded-lg mx-2"
                 onClick={() => setIsMenuOpen(false)}
                 style={{ animationDelay: `${index * 50}ms` }}
               >
